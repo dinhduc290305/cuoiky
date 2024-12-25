@@ -98,10 +98,10 @@
                                     echo "<td>Ảnh không tồn tại</td>";
                                 }
                                 echo "<td>
-                                    <a href='edit.php?id={$row['id']}' class='btn btn-warning btn-sm'>
+                                    <a href='edit.php?hid={$row['id']}' class='btn btn-warning btn-sm'>
                                         <i class='fa fa-edit'></i> Sửa
                                     </a>
-                                    <a href='delete.php?id={$row['id']}' onclick='return confirm(\"Bạn có muốn xóa sản phẩm này không?\");' class='btn btn-danger btn-sm'>
+                                    <a href='delete.php?hid={$row['id']}' onclick='return confirm(\"Bạn có muốn xóa sản phẩm này không?\");' class='btn btn-danger btn-sm'>
                                         <i class='fa fa-trash'></i> Xóa
                                     </a>
                                 </td>";
