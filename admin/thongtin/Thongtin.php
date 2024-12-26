@@ -28,7 +28,7 @@
             <ul>
                 <li><a href="../Trangchu.php"><i class="fa fa-home"></i> Trang chủ</a></li>
                 <li><a href="#" class="active"><i class="fa fa-bar-chart"></i> Thông tin</a></li>
-                <li><a href="../Khachhang.php"><i class="fa fa-users"></i> Khách hàng</a></li>
+                <li><a href="../Khachhang/Khachhang.php"><i class="fa fa-users"></i> Khách hàng</a></li>
                 <li><a href="../Chinhsua.html"><i class="fa fa-sliders"></i> Chỉnh sửa</a></li>
                 <li><a href="../../Dangky.html"><i class="fa fa-sign-out"></i> Đăng xuất</a></li>
             </ul>
@@ -53,12 +53,37 @@
                     <h2><strong><i class="fa fa-table"></i> BẢNG QUẢN LÝ SẢN PHẨM</strong></h2>
                 </div>
                 <div class="panel-body">
-                    <form class="form-inline text-center" style="margin-bottom: 20px;">
+                    <form class="form-inline text-center" style="margin-bottom: 20px;" method="post">
                         <input type="text" name="search" class="form-control" placeholder="Nhập thông tin tìm kiếm" style="width: 300px;">
                         <button type="submit" name="find" class="btn btn-info"><i></i> Tìm kiếm</button>
-                        <a href="#" class="btn btn-secondary"><i class="fa fa-list"></i> Hiển thị tất cả</a>
+                        <a href="" class="btn btn-secondary"><i class="fa fa-list"></i> Hiển thị tất cả</a>
                         <a href="addproduct.php" class="btn btn-success" style="margin-left: 10px;"><i class="fa fa-user-plus"></i> Thêm sản phẩm</a>
                     </form>
+
+                    <?php
+                        require_once "../../connt/connect.php";
+                        global $conn;
+
+                        $sql = "SELECT * FROM product";
+                        if (isset($_POST['find'])) {
+                            $search = $_POST['search'];
+
+                            if (!empty($search)) {
+                                $sql = "SELECT * FROM product WHERE name LIKE '%$search%' ";
+                            }
+                        }
+
+                    $result = mysqli_query($conn, $sql);
+                    $count = mysqli_num_rows($result);
+
+                        if (isset($_POST['find']) && empty($search)) {
+                            echo '<div class="alert alert-warning text-center">Vui lòng nhập để tìm kiếm.</div>';
+                        } elseif (isset($_POST['find']) && $count <= 0) {
+                            echo '<div class="alert alert-danger text-center">Không tìm thấy kết quả nào với từ khóa: <strong>' . $search . '</strong></div>';
+                        } elseif (isset($_POST['find']) && $count > 0) {
+                            echo '<div class="alert alert-success text-center">Tìm thấy <strong>' . $count . '</strong> kết quả với từ khóa: <strong>' . $search . '</strong></div>';
+                        }
+                    ?>
 
                     <table class="table table-bordered table-hover text-center">
                         <thead class="bg-info">
@@ -76,11 +101,6 @@
                         </thead>
                         <tbody>
                         <?php
-                        require_once "../../connt/connect.php";
-                        global $conn;
-
-                        $sql = "SELECT * FROM product";
-                        $result = mysqli_query($conn, $sql);
                         if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
                                 echo "<tr>";

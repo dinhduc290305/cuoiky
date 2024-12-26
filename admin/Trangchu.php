@@ -71,7 +71,7 @@
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>TRANG CHỦ</a></li>
             <li><a href="thongtin/Thongtin.php"><i class="fa fa-bar-chart fa-fw"></i>THÔNG TIN</a></li>
-            <li><a href="Khachhang.php"><i class="fa fa-users fa-fw"></i>KHÁCH HÀNG</a></li>
+            <li><a href="Khachhang/Khachhang.php"><i class="fa fa-users fa-fw"></i>KHÁCH HÀNG</a></li>
             <li><a href="Chinhsua.html"><i class="fa fa-sliders fa-fw"></i>CHỈNH SỬA</a></li>
             <li><a href="../Dangky.html"><i class="fa fa-eject fa-fw"></i>ĐĂNG XUẤT</a></li>
           </ul>  
