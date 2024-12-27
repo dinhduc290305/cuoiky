@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2024 at 10:44 AM
+-- Generation Time: Dec 27, 2024 at 06:28 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -39,6 +39,22 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `phone`, `password`) VALUES
 (1, '123456789', '123456');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order`
+--
+
+CREATE TABLE `order` (
+  `id_order` int(11) NOT NULL,
+  `fullname` varchar(100) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `product` varchar(200) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -91,6 +107,12 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`,`phone`);
 
 --
+-- Indexes for table `order`
+--
+ALTER TABLE `order`
+  ADD PRIMARY KEY (`id_order`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -111,6 +133,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `order`
+--
+ALTER TABLE `order`
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `product`
