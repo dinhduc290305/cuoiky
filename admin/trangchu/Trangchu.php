@@ -27,9 +27,9 @@
     http://www.templatemo.com/preview/templatemo_455_visual_admin
     -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/templatemo-style.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/templatemo-style.css" rel="stylesheet">
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,7 +41,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Protest+Guerrilla&family=Shizuru&display=swap" rel="stylesheet">
-    <script src="js/dem.js"></script>
+    <script src="../js/dem.js"></script>
   </head>
   <body>  
     <!-- Left column -->
@@ -49,10 +49,10 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <img src="../img/logo.webp" alt="" class="logo">
+          <img src="../../img/logo.webp" alt="" class="logo">
         </header>
         <div class="profile-photo-container">
-          <img src="images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
+          <img src="../images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">
           <div class="profile-photo-overlay"></div>
         </div>      
         <!-- Search box -->
@@ -70,10 +70,10 @@
         <nav class="templatemo-left-nav">          
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>TRANG CHỦ</a></li>
-            <li><a href="thongtin/Thongtin.php"><i class="fa fa-bar-chart fa-fw"></i>THÔNG TIN</a></li>
-            <li><a href="Khachhang/Khachhang.php"><i class="fa fa-users fa-fw"></i>KHÁCH HÀNG</a></li>
-            <li><a href="Chinhsua.html"><i class="fa fa-sliders fa-fw"></i>CHỈNH SỬA</a></li>
-            <li><a href="../Dangky.html"><i class="fa fa-eject fa-fw"></i>ĐĂNG XUẤT</a></li>
+            <li><a href="../thongtin/Thongtin.php"><i class="fa fa-bar-chart fa-fw"></i>THÔNG TIN SẢN PHẨM</a></li>
+            <li><a href="../Khachhang/Khachhang.php"><i class="fa fa-users fa-fw"></i>THÔNG TIN KHÁCH HÀNG</a></li>
+            <li><a href="../dondathang/dondathang.php"><i class="fa fa-sliders fa-fw"></i>ĐƠN ĐẶT HÀNG</a></li>
+            <li><a href="../../Dangky.html"><i class="fa fa-eject fa-fw"></i>ĐĂNG XUẤT</a></li>
           </ul>  
         </nav>
       </div>
@@ -84,8 +84,8 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase" style="text-align: right;">
                 <li><a href="login.html" style="    line-height: 50px;">Sign out</a></li>
-                <img src="../img/357444673_1702327550214019_4545460425657428332_n.jpg" alt="" class="img-thumbnail" 
-                style="width: 50px;
+                <img src="../../img/357444673_1702327550214019_4545460425657428332_n.jpg" alt="" class="img-thumbnail"
+                     style="width: 50px;
                 height: 50px;
                 border-radius: 25px;">
               </ul>  
@@ -129,7 +129,7 @@
                 <div class="media">
                   <div class="media-left">
                     <a href="#">
-                      <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
+                      <img class="media-object img-circle" src="../images/sunset.jpg" alt="Sunset">
                     </a>
                   </div>
                   <div class="media-body">
@@ -145,7 +145,7 @@
                 <div class="media">
                   <div class="media-left">
                     <a href="#">
-                      <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
+                      <img class="media-object img-circle" src="../images/sunset.jpg" alt="Sunset">
                     </a>
                   </div>
                   <div class="media-body">
@@ -248,10 +248,10 @@
     </div>
     
     <!-- JS -->
-    <script src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
-    <script src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
+    <script src="../js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
+    <script src="../js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
     <script src="https://www.google.com/jsapi"></script> <!-- Google Chart -->
-    <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+    <script type="text/javascript" src="../js/templatemo-script.js"></script>      <!-- Templatemo Script -->
 
   </body>
 </html>

@@ -27,7 +27,7 @@ if ($phone && $pass) {
         } else if($pass === $admin['password']){
             echo "<script>
                 alert('Đăng nhập thành công!, xin chào Admin');
-                window.location.href = '../admin/Trangchu.php'; // Chuyển hướng đến trang admin
+                window.location.href = '../admin/trangchu/Trangchu.php'; // Chuyển hướng đến trang admin
             </script>";
         } else {
             echo "<script>

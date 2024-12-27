@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Visual Admin Dashboard - Manage Users</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/templatemo-style.css" rel="stylesheet">
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 <body>
@@ -32,10 +29,10 @@
         </form>
         <nav class="templatemo-left-nav">
             <ul>
-                <li><a href="../Trangchu.php"><i class="fa fa-home fa-fw"></i>TRANG CHỦ</a></li>
-                <li><a href="../thongtin/Thongtin.php"><i class="fa fa-bar-chart fa-fw"></i>THÔNG TIN</a></li>
-                <li><a href="#" class="active"><i class="fa fa-users fa-fw"></i>KHÁCH HÀNG</a></li>
-                <li><a href="../Chinhsua.html"><i class="fa fa-sliders fa-fw"></i>CHỈNH SỬA</a></li>
+                <li><a href="../trangchu/Trangchu.php"><i class="fa fa-home fa-fw"></i>TRANG CHỦ</a></li>
+                <li><a href="../thongtin/Thongtin.php"><i class="fa fa-bar-chart fa-fw"></i>THÔNG TIN SẢN PHẨM</a></li>
+                <li><a href="#" class="active"><i class="fa fa-users fa-fw"></i>THÔNG TIN KHÁCH HÀNG</a></li>
+                <li><a href="../dondathang/dondathang.php"><i class="fa fa-sliders fa-fw"></i>ĐƠN ĐẶT HÀNG</a></li>
                 <li><a href="../../Dangky.html"><i class="fa fa-eject fa-fw"></i>ĐĂNG XUẤT</a></li>
             </ul>
         </nav>
@@ -52,7 +49,7 @@
         <div class="container">
             <div class="panel panel-primary">
                 <div class="panel-heading text-center" style="background: #1f9cca">
-                    <h2><strong><i class="fas fa-table"></i> BẢNG DỮ LIỆU</strong></h2>
+                    <h2><strong><i class="fas fa-table"></i> BẢNG KHÁCH HÀNG</strong></h2>
                 </div>
                 <div class="panel-body">
                     <form action="" method="post" class="form-inline text-center" style="margin-bottom: 20px;">
@@ -65,7 +62,7 @@
                             <i class="fas fa-list"></i> Hiển thị tất cả
                         </a>
                         <a href="index.php" class="btn btn-success" style="margin-left: 10px">
-                            <i class=" fas fa-user-plus"></i> Thêm sinh viên
+                            <i class=" fas fa-user-plus"></i> Thêm khách hàng
                         </a>
 
                     </form>
@@ -80,7 +77,7 @@
                         $search = $_POST['search'];
 
                         if (!empty($search)) {
-                            $sql = "SELECT * FROM users WHERE fullname ";
+                            $sql = "SELECT * FROM users WHERE fullname LIKE '%$search%' ";
                         }
                     }
 

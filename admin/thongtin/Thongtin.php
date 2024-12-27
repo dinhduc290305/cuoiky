@@ -26,11 +26,11 @@
         </div>
         <nav class="templatemo-left-nav">
             <ul>
-                <li><a href="../Trangchu.php"><i class="fa fa-home"></i> Trang chủ</a></li>
-                <li><a href="#" class="active"><i class="fa fa-bar-chart"></i> Thông tin</a></li>
-                <li><a href="../Khachhang/Khachhang.php"><i class="fa fa-users"></i> Khách hàng</a></li>
-                <li><a href="../Chinhsua.html"><i class="fa fa-sliders"></i> Chỉnh sửa</a></li>
-                <li><a href="../../Dangky.html"><i class="fa fa-sign-out"></i> Đăng xuất</a></li>
+                <li><a href="../trangchu/Trangchu.php"><i class="fa fa-home"></i> TRANG CHỦ</a></li>
+                <li><a href="#" class="active"><i class="fa fa-bar-chart"></i> THÔNG TIN SẢN PHẨM</a></li>
+                <li><a href="../Khachhang/Khachhang.php"><i class="fa fa-users"></i> THÔNG TIN KHÁCH HÀNG</a></li>
+                <li><a href="../dondathang/dondathang.php"><i class="fa fa-sliders"></i> ĐƠN ĐẶT HÀNG</a></li>
+                <li><a href="../../Dangky.html"><i class="fa fa-sign-out"></i> ĐĂNG XUẤT</a></li>
             </ul>
         </nav>
     </div>
