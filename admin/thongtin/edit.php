@@ -7,8 +7,6 @@ $result=mysqli_query($conn,$edit_sql);
 $row=mysqli_fetch_assoc($result);
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
